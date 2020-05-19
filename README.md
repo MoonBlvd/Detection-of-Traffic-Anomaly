@@ -1,6 +1,8 @@
 # When, Where, and What? A New Dataset for Anomaly Detection in Driving Videos
 Yu Yao, Xizi Wang, Mingze Xu, Zelin Pu, Ella Atkins, David Crandall
 
+<p align="center"><img width="100%" src="img/DoTA.pdf"/></p>
+
 :boom: This repo contains the **Detection of Traffic Anomaly (DoTA) dataset** and the **code** of our paper.
 
 ## DoTA dataset
