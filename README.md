@@ -21,7 +21,7 @@ The `download_DoTA.py` script first downloads the original long videos from YouT
 ## Citation
 If you found this repo is useful, please feel free to cite our paper:
 
-    @article{yao2020and,
+    @article{yao2020dota,
             title={When, Where, and What? A New Dataset for Anomaly Detection in Driving Videos},
             author={Yao, Yu and Wang, Xizi and Xu, Mingze and Pu, Zelin and Atkins, Ella and Crandall, David},
             journal={arXiv preprint arXiv:2004.03044},
