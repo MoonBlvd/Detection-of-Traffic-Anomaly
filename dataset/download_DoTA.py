@@ -6,6 +6,7 @@ import yaml
 import cv2
 import youtube_dl
 import json
+from tqdm import tqdm
 import pdb
 
 def download_videos(args):
@@ -38,6 +39,7 @@ def videos_to_frame(args, file_name):
         ends.append(anno['video_end'])
     # load video
     cap = cv2.VideoCapture(file_name)
+    downsample_rate = 3
     length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     fps = float(cap.get(cv2.CAP_PROP_FPS))
     print("Number of frames: ", length)
@@ -48,7 +50,7 @@ def videos_to_frame(args, file_name):
         ret, image = cap.read()
         if not ret:
             break
-        if i%downsample_rate == 0:
+        if i % downsample_rate == 0:
             if j >= starts[0] and j <= ends[0]:
                 if j == starts[0]:
                     # create a new video clip directory
@@ -74,7 +76,7 @@ def main():
     parser.add_argument('--url_file', required=True, help='a .txt file saving urls to all videos')
     parser.add_argument('--to_images', type=bool, default=False, help='downsample the video and save image frames, default is false')
     parser.add_argument('--img_dir', default='frames', help='target directory to save downsampled')
-    parser.add_argument('--anno_dir', default='frames', help='directory where all annotation files are saved')
+    parser.add_argument('--anno_dir', default='annotations', help='directory where all annotation files are saved')
 
     args = parser.parse_args()
 
@@ -82,12 +84,10 @@ def main():
     download_videos(args)
     
     # extract annotated frames from videos
-    all_videos = sorted(glob.glob(os.path.join(DOWNLOAD_DIR, '*.mp4')))
-    all_videos = all_videos[:1]
+    all_videos = sorted(glob.glob(os.path.join(args.download_dir, '*.mp4')))
+    # all_videos = all_videos[:1]
     print("Number of videos: ", len(all_videos))
-    pdb.set_trace()
     if args.to_images:
-        downsample_rate = 3
         for video_idx, file_name in tqdm(enumerate(all_videos)):
             videos_to_frame(args, file_name)
 

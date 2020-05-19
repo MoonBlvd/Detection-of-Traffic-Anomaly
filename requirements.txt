@@ -1,0 +1,3 @@
+PyYAML
+youtube_dl
+tqdm
