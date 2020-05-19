@@ -3,7 +3,7 @@ Yu Yao, Xizi Wang, Mingze Xu, Zelin Pu, Ella Atkins, David Crandall
 
 <p align="center"><img width="100%" src="img/DoTA.png"/></p>
 
-:boom: This repo contains the **Detection of Traffic Anomaly (DoTA) dataset** and the **code** of our paper.
+:boom: This repo contains the **Detection of Traffic Anomaly (DoTA) dataset** and the **code** of our [paper](https://arxiv.org/pdf/2004.03044.pdf).
 
 ## DoTA dataset
 Install dependencies by `pip install -r requirements.txt`
