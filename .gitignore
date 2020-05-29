@@ -2,3 +2,5 @@ videos/
 frames/
 annotations/
 backups/
+missed_videos/
+.DS_Store

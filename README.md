@@ -17,7 +17,7 @@ unzip DoTA_annotations.zip
 python download_DoTA.py --url_file DoTA_urls.txt --download_dir PATH_TO_SAVE_RAW_VIDEO
 ```
 
-**NOTE**: four long videos (see `dataset/broken_urls.txt`) in DoTA were **REMOVED** by YouTube. To use these four videos, please download [here](https://drive.google.com/drive/folders/1uSdyNu8XM_QV6y9r4tpxN7iNNNAgWy9P?usp=sharing) and put them in the user-defined `PATH_TO_SAVE_RAW_VIDEO` **before** running the next step.
+**NOTE**: six long videos (see `dataset/broken_urls.txt`) in DoTA were **REMOVED** by YouTube. To use these four videos, please download [here](https://drive.google.com/drive/folders/1uSdyNu8XM_QV6y9r4tpxN7iNNNAgWy9P?usp=sharing) and put them in the user-defined `PATH_TO_SAVE_RAW_VIDEO` **before** running the next step.
 
 Second, extract annotated frames from original videos:
 ```    
