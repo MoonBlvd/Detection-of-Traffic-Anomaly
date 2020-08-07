@@ -13,6 +13,7 @@ import pdb
 
 def download_videos(args):
     DOWNLOAD_DIR = args.download_dir
+    COOKIES_FILE = args.cookiefile
 
     # Download videos
     if not os.path.isdir(DOWNLOAD_DIR):
@@ -21,14 +22,15 @@ def download_videos(args):
         os.makedirs(DOWNLOAD_DIR)
 
     '''Download videos'''
-    ydl_opt = {'outtmpl': os.path.join(DOWNLOAD_DIR, '%(id)s.%(ext)s'),
+    ydl_opt = {'cookiefile': COOKIES_FILE, 'outtmpl': os.path.join(DOWNLOAD_DIR, '%(id)s.%(ext)s'),
             'format': 'mp4'}
     ydl = youtube_dl.YoutubeDL(ydl_opt)
 
     url_list = open(args.url_file,'r').readlines()
+    
     ydl.download(url_list)
     print("Download finished!")
-
+    
 # def videos_to_frame(args, file_name):
 #     # load annotations
 #     vid = file_name.split('/')[-1].split('.')[0]
@@ -79,6 +81,7 @@ def main():
     parser = argparse.ArgumentParser(description='AnAnXingChe video downloader parameters.')
     parser.add_argument('--download_dir', required=True, help='target directory to save downloaded videos')
     parser.add_argument('--url_file', required=True, help='a .txt file saving urls to all videos')
+    parser.add_argument('--cookiefile', required=True, help='a .txt file with youtube cookies')
     # parser.add_argument('--to_images', type=bool, default=False, help='downsample the video and save image frames, default is false')
     # parser.add_argument('--img_dir', default='frames', help='target directory to save downsampled')
     # parser.add_argument('--anno_dir', default='annotations', help='directory where all annotation files are saved')

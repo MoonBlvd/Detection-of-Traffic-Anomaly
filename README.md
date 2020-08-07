@@ -10,11 +10,14 @@ Install `ffmpeg`.
 
 Install python dependencies by `pip install -r requirements.txt`.
 
+Get your youtube cookies to be able to download age restricted videos.
+For Chrome use cookies.txt extension (https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg)
+
 First, download the orginal videos from YouTube:
 ```
 cd dataset
 unzip DoTA_annotations.zip
-python download_DoTA.py --url_file DoTA_urls.txt --download_dir PATH_TO_SAVE_RAW_VIDEO
+python download_DoTA.py --url_file DoTA_urls.txt --download_dir PATH_TO_SAVE_RAW_VIDEO --cookiefile PATH_TO_COOKIE/cookies.txt
 ```
 
 **NOTE**: six long videos (see `dataset/broken_urls.txt`) in DoTA were **REMOVED** by YouTube. To use these four videos, please download [here](https://drive.google.com/drive/folders/1uSdyNu8XM_QV6y9r4tpxN7iNNNAgWy9P?usp=sharing) and put them in the user-defined `PATH_TO_SAVE_RAW_VIDEO` **before** running the next step.
