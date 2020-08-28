@@ -7,6 +7,7 @@ import torch
 from torch.utils import data
 import pdb
 import time 
+from tqdm import tqdm
 
 class DoTADataset(data.Dataset):
     def __init__(self, args, phase):
@@ -36,7 +37,7 @@ class DoTADataset(data.Dataset):
         # Each session contains all normal trajectories
         used_video = []
         min_seq_len = self.args.segment_len if self.phase == 'test' else self.args.segment_len + self.args.pred_timesteps
-        for session_dir in self.sessions_dirs:
+        for session_dir in tqdm(self.sessions_dirs):
             vid = session_dir.split('/')[-1].split('.')[0]
             if vid not in self.valid_videos:
                 continue

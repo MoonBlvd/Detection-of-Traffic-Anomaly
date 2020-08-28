@@ -5,3 +5,5 @@ backups/
 missed_videos/
 .DS_Store
 .vscode/
+__pycache__
+data

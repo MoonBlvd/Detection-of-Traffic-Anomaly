@@ -30,6 +30,29 @@ The `video2frames.py` script extracts annotated frames for each video clip and w
 
 Now the annotated clips are extracted and ready to use!
 
+### Annotations for VAD 
+Besides the per-video '.json' files, we also provide a `metadata_train.json` and a `metadata_val.json` which contains the video metadata in the following format:
+
+    {
+    video_id: {
+        "video_start": int,
+        "video_end": int,
+        "anomaly_start": int,
+        "anomaly_end": int,
+        "anomaly_class": str,
+        "num_frames": int,
+        "subset": "train" or "test"
+    },
+
+### Extracted data for FOL model training and testing
+We also provide the extracted object bounding box tracks and corresponding optical flow features that we used to train our FOL models.
+To use these extracted data, please [download](https://drive.google.com/drive/folders/1IVCedrlPg03Fsg4tqDA2cWYlcdrsKUsp?usp=sharing) and extract the zip files to your data directory.
+We provide an example of how to run our dataloader:
+```
+python dataloader_example.py --log_config config/config_example.yaml
+```
+Please make sure the data directories match your data directory on your machine.
+
 ## Citation
 If you found this repo is useful, please cite our paper:
 

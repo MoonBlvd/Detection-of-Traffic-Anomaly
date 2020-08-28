@@ -1,7 +1,7 @@
 # Dataset
 root: 'data/'
-data_root: "data/a3d_fol_data" 
-label_file: 'data/VAD_val.json' 
+data_root: "data/DoTA_fol_train_data" # DoTA_fol_val_data
+label_file: 'data/metadata_val.json' 
 train_split: 'data/train_split.txt'
 val_split: 'data/val_split.txt'
 
