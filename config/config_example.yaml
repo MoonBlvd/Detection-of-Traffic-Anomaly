@@ -1,0 +1,35 @@
+# Dataset
+root: 'data/'
+data_root: "data/a3d_fol_data" 
+label_file: 'data/VAD_val.json' 
+train_split: 'data/train_split.txt'
+val_split: 'data/val_split.txt'
+
+track_dir: "data/sort_output/" 
+flow_dir: "data/flownet2/" 
+ego_motion_dir: ""
+img_dir: "data/frames"
+
+# dataset arguments
+seed_max: 5
+segment_len: 10 #16
+
+device: 'cuda'
+# fol model parameters
+pred_timesteps: 5
+with_ego: False 
+pred_dim: 4
+
+# dataloader parameters
+shuffle: True
+num_workers: 32
+GPU: 0
+batch_size: 16
+
+# image parameters
+H: 720
+W: 1280
+channels: 3
+
+flow_roi_size: [5,5,2]
+max_age: 10
