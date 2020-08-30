@@ -49,7 +49,7 @@ We also provide the extracted object bounding box tracks and corresponding optic
 To use these extracted data, please [download](https://drive.google.com/drive/folders/1IVCedrlPg03Fsg4tqDA2cWYlcdrsKUsp?usp=sharing) and extract the zip files to your data directory.
 We provide an example of how to run our dataloader:
 ```
-python dataloader_example.py --log_config config/config_example.yaml
+python dataloader_example.py --load_config config/config_example.yaml
 ```
 Please make sure the data directories match your data directory on your machine.
 
