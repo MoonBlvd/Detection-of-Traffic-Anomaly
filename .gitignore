@@ -7,3 +7,4 @@ missed_videos/
 .vscode/
 __pycache__
 data
+*.zip

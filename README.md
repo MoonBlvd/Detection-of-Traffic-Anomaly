@@ -10,8 +10,7 @@ Install `ffmpeg`.
 
 Install python dependencies by `pip install -r requirements.txt`.
 
-Get your youtube cookies to be able to download age restricted videos.
-For Chrome use cookies.txt extension (https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg)
+Get your youtube cookies to be able to download age restricted videos. Please find how to generate cookie based on this [github issue](https://github.com/blackjack4494/yt-dlc/issues/7). Chrome users can use [this app](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid) to generate cookie file.
 
 First, download the orginal videos from YouTube:
 ```
