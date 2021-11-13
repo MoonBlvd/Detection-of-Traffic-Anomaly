@@ -8,3 +8,5 @@ missed_videos/
 __pycache__
 data
 *.zip
+DoTA_fol_train_data/
+DoTA_fol_val_data
