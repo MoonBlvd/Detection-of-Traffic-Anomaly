@@ -6,6 +6,8 @@ Yu Yao, Xizi Wang, Mingze Xu, Zelin Pu, Ella Atkins, David Crandall
 :boom: This repo contains the **Detection of Traffic Anomaly (DoTA) dataset** and the **code** of our [paper](https://arxiv.org/pdf/2004.03044.pdf).
 
 ## DoTA dataset
+**UPDATE 11/13/2021:** Due to high ratio of lost video URL, we have connected with the original channel authors to get the authority to share all the video clips we downloaded and extracted. Please find the download link [here](https://drive.google.com/file/d/1RQp4hOP9X7TW6S3_vbqZvFSkrbbFzrRj/view?usp=sharing). After downloading frames from the above link, users can skip the datadownloading and frame extraction steps below.
+
 Install `ffmpeg`.
 
 Install python dependencies by `pip install -r requirements.txt`.
