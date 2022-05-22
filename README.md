@@ -56,10 +56,12 @@ Please make sure the data directories match your data directory on your machine.
 
 ## Citation
 If you found this repo is useful, please cite our paper:
-
-    @article{yao2020dota,
-        title={When, Where, and What? A New Dataset for Anomaly Detection in Driving Videos},
-        author={Yao, Yu and Wang, Xizi and Xu, Mingze and Pu, Zelin and Atkins, Ella and Crandall, David},
-        journal={arXiv preprint arXiv:2004.03044},
-        year={2020}
-    }
+```
+@article{yao2022dota,
+  title={DoTA: unsupervised detection of traffic anomaly in driving videos},
+  author={Yao, Yu and Wang, Xizi and Xu, Mingze and Pu, Zelin and Wang, Yuchen and Atkins, Ella and Crandall, David},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  year={2022},
+  publisher={IEEE}
+}
+```
