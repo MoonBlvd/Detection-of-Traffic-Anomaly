@@ -7,6 +7,7 @@ Yu Yao, Xizi Wang, Mingze Xu, Zelin Pu, Ella Atkins, David Crandall
 
 ## DoTA dataset
 **UPDATE 12/27/2023:** We further provide the [splitted zip files](https://drive.google.com/drive/folders/1_WzhwZC2NIpzZIpX7YCvapq66rtBc67n) for researchers who have difficult to download the 55GB large file from the blow link. They provide the same data, except that in this new link the 55GB data are speratly archived into 5 10GB files and a 5GB file for easier downloading experience.
+
 **UPDATE 11/13/2021:** Due to high ratio of lost video URL, we have connected with the original channel authors to get the authority to share all the video clips we downloaded and extracted. Please find the download link [here](https://drive.google.com/file/d/1RQp4hOP9X7TW6S3_vbqZvFSkrbbFzrRj/view?usp=sharing). After downloading frames from the above link, users can skip the datadownloading and frame extraction steps below.
 
 Install `ffmpeg`.
